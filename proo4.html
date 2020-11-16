@@ -1,0 +1,101 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>اتصل بنا</title>
+        <link rel="stylesheet"type="text/css"href="sup1.css">
+        <style>
+        *{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-image: url("cx.jpg");
+    background-attachment: fixed; 
+    perspective: 1000px;
+    background-repeat: repeat;
+     }
+    .j{
+                background-color: rgba(50,50,50,0.6);
+                width: 1320px;
+                height: 580px;
+                margin: 15px;
+                padding: 70px;
+
+    }
+
+    h3,p{
+        text-align: center;
+        color: #f0ffff;
+        font-style: italic;
+        font-family: tahoma;
+        font-weight: 20px;
+    }
+   
+label{
+        color: #f0ffff;
+        font-style: italic;
+        font-family: tahoma;
+        font-weight: 15px;
+
+
+}
+.l{
+    width: 350px;
+    height: 40px;
+
+}
+.o{
+    width: 100px;
+    height: 30px
+}
+input{
+    margin: 7px;
+}
+
+    </style>
+    <script type="text/javascript">
+    function browserinputcgeck(){
+        var inputelem=document.getElementById('name');
+        if(inputelem.type=="text"){
+            alert("the browser does not support html5 input type mame validation assumes plain text");
+        }
+    }
+ function browserinputcgeck(){
+        var inputelem=document.getElementById('password');
+        if(inputelem.type=="password"){
+            alert("the browser does not support html5 input type mame validation assumes plain text");
+        }
+    }
+
+    }
+    </script>
+    </head>
+    <body>
+    <div class="j">
+        <h3>You must fill out the form</h3>
+            
+                    <form>
+                        <center>
+            <label>user name</label>
+            <input type="text"name="user name"id="name"class="l" autofocus required onblur="browserinputcgeck()">
+            <br>
+            <label>your password</label>
+            <input type="password"name="password"class="l"id="password"autofocus required onblur="browserinputcgeck()">
+            <br>
+            <input type="checkbox">
+            <label>remember me</label>
+            <input type="reset" name="reset"value="reset"class="o">
+            <br>
+            <input type="image"src="14.jpg"alt="submit"width="450"height="200">
+            <br>
+            <input type="submit"value="sign up"class="o">
+        </center>
+        </form>
+        <p>Thank you</p>
+    </div>
+    </body>
+    </html>
